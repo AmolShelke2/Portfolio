@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* for the smooth scroll  */
+html {
+  scroll-behavior: smooth;
+}
+
+/* all body  */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  margin: 0 auto;
+  background: whitesmoke;
+}
+
+/* header section  */
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: thistle;
+  color: #000;
+}
+
+#nav-bar ul {
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#nav-bar a {
+  padding-left: 50px;
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.9s ease;
+}
+
+#title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* header section ends  */
+
+/* the main section  */
+main {
+  text-align: center;
+  margin: 30px;
+}
+
+form {
+  line-height: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#form input {
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  background: transparent;
+  margin-bottom: 20px;
+}
+
+#contact h3 {
+  font-weight: 200;
+}
+
+#form button {
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  background: white;
+}
+
+#skills {
+  padding: 30px;
+  margin: 20px 5px 20px 5px;
+  border: 2px solid #eee;
+}
+
+#skills h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#skills i {
+  font-size: 50px;
+  padding: 20px;
+  transition: 0.9s ease;
+}
+
+#skills i:hover {
+  transform: translateY(-15px);
+}
+
+#projects h3 {
+  text-align: center;
+}
+
+img {
+  width: 200px;
+}
+.card {
+  border: 1px solid grey;
+  padding: 10px 50px 10px 50px;
+  margin: 5px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  opacity: 0.7;
+  background: thistle;
+  color: white;
+  transition-duration: 0.1s;
+}
+
+#about {
+  margin: 30px;
+  width: 100%;
+  border: 1px solid #ffff;
+}
+
+#about img {
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+/* main section ends  */
+
+/* social section  */
+.social h5 {
+  text-align: center;
+  font-size: 15px;
+}
+
+.social ul {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li {
+  padding-left: 20px;
+}
+
+.social i {
+  font-size: 30px;
+  background-color: #fff;
+  transition: transform 0.9s ease;
+}
+
+.social i:hover {
+  transform: translateY(-10px);
+}
+
+/* social section ends  */
+
+/* for responsive  */
+@media screen and (max-width: 600px) {
+  #nav-bar {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  #nav-bar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #nav-bar a:hover {
+    transform: translateY(-10px);
+  }
+}
