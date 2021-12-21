@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-
 /* for the smooth scroll  */
 html {
   scroll-behavior: smooth;
@@ -136,6 +135,12 @@ img {
   filter: blur(2px);
 }
 
+#about p {
+  line-height: 2;
+  letter-spacing: 1px;
+  padding-bottom: 2px;
+}
+
 /* main section ends  */
 
 /* social section  */
@@ -181,10 +186,6 @@ img {
     display: block;
     text-align: left;
     padding-left: 25px;
-  }
-
-  #nav-bar a:hover {
-    transform: translateY(-10px);
   }
 
   #title h1 {
